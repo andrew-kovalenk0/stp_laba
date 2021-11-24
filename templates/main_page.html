@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Image processing</title>
+</head>
+<body>
+    <h3>Math morphology - Start image</h3>
+    <img src="{{url_for('static', filename='image.png')}}" alt=""/>
+    <p>_____________________________________</p>
+
+    <h3>Math morphology - Dilate (Opencv)</h3>
+    <img src="{{url_for('static', filename='dilate_image_cv.png')}}" alt=""/>
+    <p>Time for dilate Opencv algorithm: {{ dilate_time_cv }} microseconds.</p>
+    <p>_____________________________________</p>
+
+    <h3>Math morphology - Dilate (Own)</h3>
+    <img src="{{url_for('static', filename='dilate_image_own.png')}}" alt=""/>
+    <p>Time for dilate own algorithm: {{ dilate_time_own }} microseconds.</p>
+    <p>_____________________________________</p>
+
+    <h3>Math morphology - Erode (Opencv)</h3>
+    <img src="{{url_for('static', filename='erode_image_cv.png')}}" alt=""/>
+    <p>Time for erode Opencv algorithm: {{ erode_time_cv }} microseconds.</p>
+    <p>_____________________________________</p>
+
+    <h3>Math morphology - Erode (Own)</h3>
+    <img src="{{url_for('static', filename='erode_image_own.png')}}" alt=""/>
+    <p>Time for erode own algorithm: {{ erode_time_own }} microseconds.</p>
+    <p>_____________________________________</p>
+</body>
+</html>
